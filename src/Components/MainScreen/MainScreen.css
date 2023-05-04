@@ -5,6 +5,7 @@
 .list__title {
 font-size: 1.75rem;
 margin:  2.5rem;
+color: white;
 }
 
 .list__cards {
@@ -24,7 +25,7 @@ margin:  2.5rem;
     .list__cards {
         display: grid;
     grid-template-columns: repeat(1,210px);
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     }
     .cards__img {
@@ -65,7 +66,7 @@ margin:  2.5rem;
     .list__cards {
     display: grid;
     grid-template-columns: repeat(3,210px);
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     }
     .cards__img {
