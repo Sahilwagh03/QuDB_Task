@@ -22,7 +22,7 @@ export const Summary = () => {
                 <h2>Summary</h2>
                 <div className='summary' dangerouslySetInnerHTML={{ __html: show.summary }}></div>
                 <h2 className='h2'>Book Tickets Here</h2>
-                <Link to={`bookingTicket`} className="btn2">Book Ticket</Link>
+                <Link to={`bookingTicket`} ><button className="button-style">Book Ticket</button></Link>
             </div>
         </>
     )
