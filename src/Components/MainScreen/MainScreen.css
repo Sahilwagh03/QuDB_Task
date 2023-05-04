@@ -1,0 +1,92 @@
+.movie__list {
+    padding: 0 3rem 3rem 3rem;
+}
+
+.list__title {
+font-size: 1.75rem;
+margin:  2.5rem;
+}
+
+.list__cards {
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    gap: 40px;
+    justify-content: center;
+}
+
+
+
+
+
+/* =============== BREAKPOINTS =============== */
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .list__cards {
+        display: grid;
+    grid-template-columns: repeat(1,210px);
+    gap: 20px;
+    justify-content: center;
+    }
+    .cards__img {
+        height: 500px;
+    }
+    .cards {
+        display: inline-block;
+        transition: transform .2s;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 0.19rem;
+        cursor: pointer;
+        min-width: 335px;
+        height: 500px;
+        z-index: 0;
+        border: 1px solid rgb(99, 99, 99);
+    }
+    .cards__img2{
+        height: 500px;
+        width: 335px;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 576px) {
+    
+    
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    
+    
+}
+
+@media only screen and  (min-width: 768px){
+    .list__cards {
+    display: grid;
+    grid-template-columns: repeat(3,210px);
+    gap: 20px;
+    justify-content: center;
+    }
+    .cards__img {
+        height: 500px;
+    }
+    .cards {
+        display: inline-block;
+        transition: transform .2s;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 0.19rem;
+        cursor: pointer;
+        min-width: 335px;
+        height: 500px;
+        z-index: 0;
+        border: 1px solid rgb(99, 99, 99);
+    }
+    .cards__img2{
+        height: 500px;
+        width: 335px;
+    }
+
+}
