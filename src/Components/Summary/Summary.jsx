@@ -19,7 +19,7 @@ export const Summary = () => {
             <div className="details-container">
                 <h1>{show.name}</h1>
                 {show.image && <img className='img-main1' src={show.image.medium} alt={show.name} />}
-                <h2>Summary</h2>
+                <h2 className='h2'>Summary</h2>
                 <div className='summary' dangerouslySetInnerHTML={{ __html: show.summary }}></div>
                 <h2 className='h2'>Book Tickets Here</h2>
                 <Link to={`bookingTicket`} ><button className="button-style">Book Ticket</button></Link>

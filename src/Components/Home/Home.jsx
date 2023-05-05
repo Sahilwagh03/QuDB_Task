@@ -10,17 +10,20 @@ import { MainScreen } from '../MainScreen/MainScreen';
 export const Home = () => {
     const [shows, setShows] = useState([]);
 
-    useEffect(()=>{
-  fetch(`https://api.tvmaze.com/search/shows?q=all`)
-    .then(res => res.json())
-    .then(data => setShows(data))
-    },[])
+    useEffect(() => {
+        fetch(`https://api.tvmaze.com/search/shows?q=all`)
+            .then(res => res.json())
+            .then(data => setShows(data))
+    }, [])
 
     return (
         <>
+            <nav className="navbar">
+                <div className="logo">QuaDB Task</div>
+            </nav>
             <div className="poster">
                 <Carousel
-                    showThumbs={false}
+                    showThumbs={true}
                     autoPlay={true}
                     transitionTime={3}
                     infiniteLoop={true}
@@ -36,7 +39,7 @@ export const Home = () => {
                         ))
                     }
                 </Carousel>
-                <MainScreen shows={shows}/>
+                <MainScreen shows={shows} />
             </div>
         </>
     )

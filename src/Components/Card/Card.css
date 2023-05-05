@@ -1,3 +1,5 @@
+
+/* CARD CSS */
 .cards {
     display: inline-block;
     transition: transform .2s;
@@ -34,6 +36,7 @@
     background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
     opacity: 0;
     transition: opacity .2s;
+    font-family: 'Poppins', sans-serif;
 }   
 
 .cards__overlay:hover {
@@ -67,7 +70,7 @@
 }
 
 
-
+/* BTN CSS */
 .btn{
     background-color: #086e36;
     text-decoration: none;

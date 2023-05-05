@@ -1,47 +1,4 @@
 
-
-.button-style{
-    padding: 1.1em 2em;
- background: none;
- border: 2px solid #fff;
- font-size: 15px;
- color: #131313;
- cursor: pointer;
- position: relative;
- overflow: hidden;
- transition: all 0.3s;
- border-radius: 12px;
- background-color: #ecd448;
- font-weight: bolder;
- box-shadow: 0 2px 0 2px #000;
-}
-
-.button-style:before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 120%;
-    background-color: #ff6700;
-    top: 50%;
-    transform: skewX(30deg) translate(-150%, -50%);
-    transition: all 0.5s;
-   }
-   
-   .button-style:hover {
-    background-color: #4cc9f0;
-    color: #fff;
-    box-shadow: 0 2px 0 2px #0d3b66;
-   }
-   
-   .button-style:hover::before {
-    transform: skewX(30deg) translate(150%, -50%);
-    transition-delay: 0.1s;
-   }
-   
-   .button-style:active {
-    transform: scale(0.9);
-   }
-
 .details-container {
     max-width: 1200px;
     margin: auto;
@@ -55,6 +12,7 @@ h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     color: #ffff;
+    font-family: 'Poppins', sans-serif;
 }
 
 .img-main1 {
@@ -69,19 +27,11 @@ h1 {
     margin-bottom: 2rem;
     line-height: 1.5;
     text-align: justify;
-    color: #ffff;
+    color: wheat;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* show Info */
 
-.col-md-6 {
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    animation-name: slideIn;
-    animation-duration: 1s;
-}
 
 @keyframes slideIn {
     from {
@@ -100,24 +50,11 @@ h3 {
     margin-bottom: 10px;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 5px;
-    color: #666;
-}
-
-li strong {
-    font-weight: bold;
-    color: #333;
-}
 
 .h2{
     color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
 }
 
 /* CSS for booking tickets button */
@@ -141,6 +78,51 @@ li strong {
     color: #086e36;
     background-color: #fff;
 }
+
+
+.button-style{
+    padding: 1.1em 2em;
+ background: none;
+ border: 2px solid #fff;
+ font-size: 15px;
+ color: #131313;
+ cursor: pointer;
+ position: relative;
+ overflow: hidden;
+ transition: all 0.3s;
+ border-radius: 12px;
+ background-color: #ecd448;
+ font-weight: bolder;
+ box-shadow: 0 2px 0 2px #000;
+}
+
+/*BTN ANIMATION CSS */
+.button-style:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #ff6700;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+}
+   
+   .button-style:hover {
+    background-color: #4cc9f0;
+    color: #fff;
+    box-shadow: 0 2px 0 2px #0d3b66;
+}
+   
+   .button-style:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+}
+   
+   .button-style:active {
+    transform: scale(0.9);
+}
+
 
 /* Responsive design */
 @media only screen and (max-width: 768px) {

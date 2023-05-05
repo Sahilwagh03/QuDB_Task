@@ -1,3 +1,5 @@
+
+/* CSS FOR SHOW CONTAINER */
 .movie__list {
     padding: 0 3rem 3rem 3rem;
 }
@@ -5,7 +7,7 @@
 .list__title {
 font-size: 1.75rem;
 margin:  2.5rem;
-color: white;
+color: wheat;
 }
 
 .list__cards {

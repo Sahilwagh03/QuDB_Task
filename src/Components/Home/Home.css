@@ -1,3 +1,29 @@
+/* NavBar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 26px;
+    background-color: rgb(0, 0, 0);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    transition: background-color 0.3s ease;
+    font-size: x-large;
+}
+
+/* Poster */
+.poster{
+    margin-top: 55px;
+}
+
+.logo{
+    color: wheat;
+}
+
 .posterImage{
     height: 600px;
 }
@@ -51,3 +77,4 @@
     text-align: left;
     width: 50%;
 }
+
